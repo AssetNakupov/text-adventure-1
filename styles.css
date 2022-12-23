@@ -11,7 +11,8 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: #663300;
+    background-color: #B3A580;
+    font-size: x-large;
 }
 
 .container {
@@ -31,12 +32,13 @@ body {
 }
 
 .btn {
-    background-color: #B3A580;
+    background-color: #E2C27D;
     border: 1px solid #DED29E;
     border-radius: 5px;
     padding: 5px 10px;
-    color: white;
+    color: black;
     outline: none;
+    font-size: large;
 }
 
 .btn:hover {
