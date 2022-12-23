@@ -66,17 +66,103 @@ const textNodes = [
                 text: 'Discuss the Catistian invasion with my royal network of spies.',
                 requiredState: (currentState ) => currentState.wantsInvasion,
                 setState: { wantsInvasion: true, spiesInvasion: true },
-                nextText: 3
+                nextText: 4
             },
             {
                 text: 'Spend time with the generals of the kingdom, learning about defenses of Assetia.',
                 setState: { focusOnDefense: true },
-                nextText: 3
+                nextText: 5
             },
             {
                 text: 'Spend time with the nobility of Assetia, learning about the current civilian projects and priorities.',
                 setState: { focusOnCivil: true },
+                nextText: 6
+            }
+        ]
+    },
+    {
+        id: 3,
+        text:  'You discuss the invasion with the military people. They say things to you.',
+        options: [ {
+            text: 'Be nice to them.',
+            nextText: 7
+        },
+        {
+            text: 'Be a dickbag to them.',
+            nextText: 7 
+        }
+        ]
+    },
+    {
+        id: 4,
+        text:  'You discuss the invasion with the spies. They say things to you.',
+        options: [ {
+            text: 'Be nice to them.',
+            nextText: 7
+        },
+        {
+            text: 'Be a dickbag to them.',
+            nextText: 7 
+        }
+        ]
+    },
+    {
+        id: 5,
+        text:  'You discuss the defenses of the kingdom with the generals. They say things to you.',
+        options: [ {
+            text: 'Be nice to them.',
+            nextText: 7
+        },
+        {
+            text: 'Be a dickbag to them.',
+            nextText: 7 
+        }
+        ]
+    },
+    {
+        id: 6,
+        text:  'You mingle with the nobles and discuss the current projects. They seem to be growing fond of you.',
+        options: [ {
+            text: 'Be nice to them.',
+            nextText: 7
+        },
+        {
+            text: 'Be a dickbag to them.',
+            nextText: 7 
+        }
+        ]
+    },
+    {
+        id: 7,
+        text:  'One evening, your sister, the Duchess of Toilette, comes to visit you in the palace.',
+        nextText: 8,
+        // current task: figure out how to check for states at the nextText step
+    },
+    {
+        id: 8,
+        text: '123.',
+        options: [
+            {
+                text: 'Discuss the Catistian invasion with my most trusted military leaders.',
+                requiredState: (currentState ) => currentState.wantsInvasion,
+                setState: { wantsInvasion: true, militaryInvasion: true },
                 nextText: 3
+            },
+            {
+                text: 'Discuss the Catistian invasion with my royal network of spies.',
+                requiredState: (currentState ) => currentState.wantsInvasion,
+                setState: { wantsInvasion: true, spiesInvasion: true },
+                nextText: 4
+            },
+            {
+                text: 'Spend time with the generals of the kingdom, learning about defenses of Assetia.',
+                setState: { focusOnDefense: true },
+                nextText: 5
+            },
+            {
+                text: 'Spend time with the nobility of Assetia, learning about the current civilian projects and priorities.',
+                setState: { focusOnCivil: true },
+                nextText: 6
             }
         ]
     }
