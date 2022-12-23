@@ -1,1 +1,1 @@
-# text-adventure-1
+# https://AssetNakupov.github.io/text-adventure-1/index
